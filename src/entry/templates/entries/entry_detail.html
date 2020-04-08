@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="flex-item">
+        <h1>Personal Information</h1>
+        <p>First Name - {{object.first_name}}</p>
+        <p>Last Name - {{object.last_name}}</p>
+        <p>Email - {{object.email}}</p>
+        <p>Join Date - {{object.join_date}}</p>
+        <p>DOB (Date Of Birth) - {{object.D_O_B}}</p>
+    </div>
+    <div class="flex-item">
+        <h1>Address Information</h1>
+        <p>Street - {{object.street}}</p>
+        <p>City - {{object.city}}</p>
+        <p>State - {{object.state}}</p>
+        <p>Zipcode - {{object.zipcode}}</p>
+        <p style='visibility:hidden'>...</p>
+</div>
+{% endblock %}
