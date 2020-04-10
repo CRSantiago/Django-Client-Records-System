@@ -59,3 +59,40 @@ a {
 a:hover {
     color:white;
 }
+
+a.delete {
+    color:black;
+    width:200px;
+    height:100px;
+    font-weight: bold;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 25%;
+    align-self: flex-end;
+}
+
+a.delete:hover {
+    color:white;
+}
+
+a.update {
+    color:black;
+    width:200px;
+    height:100px;
+    font-weight: bold;
+    background-color: mediumaquamarine;
+    border: 1px solid black;
+    border-radius: 25%;
+}
+
+a.update:hover {
+    color:white;
+}
+
+.nav-bar * {
+    text-decoration: none;
+    font-size: 1.2em;
+    list-style-type: none;
+    color:grey;
+    text-align: center;
+}

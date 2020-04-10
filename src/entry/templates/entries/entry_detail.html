@@ -18,5 +18,10 @@
         <p>State - {{object.state}}</p>
         <p>Zipcode - {{object.zipcode}}</p>
         <p style='visibility:hidden'>...</p>
+    </div>
+    <div>
+        <a href="{% url 'entry:entry-update' object.id %}" class='update'>Update</a>
+        <a href="{%url 'entry:entry-delete' object.id%}" class='delete'>Delete</a>
+    </div>
 </div>
 {% endblock %}

@@ -2,7 +2,7 @@
 
 
 {% block content %}
-{% for entry in object_list %}
+{% for entry in user.entries.all %}
     <div class='flex-item'>
         <p>{{entry.first_name}}</p>
         <p>{{entry.last_name}}</p>

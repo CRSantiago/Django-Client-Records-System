@@ -1,7 +1,11 @@
 from django.db import models
 from django.urls import reverse
 
+from django.contrib.auth.models import User
+
 class Entry(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='entries')
+
     male = 'male'
     female = 'female'
     GENDER_CHOICES = [

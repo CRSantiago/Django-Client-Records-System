@@ -11,9 +11,12 @@ from .models import Entry
 
 # Create your views here.
 def create_entry_view(request):
+    user = request.user
     form = EntryForm(request.POST or None)
     if form.is_valid():
-        form.save()
+        entry = form.save(commit=False)
+        entry.user = request.user
+        entry.save()
         form = EntryForm()
 
     context = {
